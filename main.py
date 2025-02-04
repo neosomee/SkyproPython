@@ -2,7 +2,8 @@ from src.masks import get_mask_card_number, get_mask_account
 from src.widget import get_date, mask_account_card
 from src.processing import filter_by_state, sort_by_date
 
-def main():
+
+def main() -> None:
     card_number = "7000792289606361"
     masked_card_number = get_mask_card_number(card_number)
     print(f"Маскированный номер карты: {masked_card_number}")
@@ -40,14 +41,13 @@ print("Filtered Data (state='EXECUTED'):", filtered_data_default)
 print("\nTesting filter_by_state function with state 'CANCELED':")
 filtered_data_canceled = filter_by_state(data, state='CANCELED')
 print("Filtered Data (state='CANCELED'):", filtered_data_canceled)
+
 print("\nTesting sort_by_date function (descending):")
 sorted_data_descending = sort_by_date(data)
 print("Sorted Data (descending):", sorted_data_descending)
-
 
 sorted_data_ascending = sort_by_date(data, descending=False)
 print("\nSorted Data (ascending):", sorted_data_ascending)
 
 if __name__ == "__main__":
     main()
-
