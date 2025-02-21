@@ -56,21 +56,16 @@ def sample_transactions():
     return transactions
 
 
-def test_filter_by_currency_usd():
-    """Проверяем фильтрацию по USD."""
-    result = list(filter_by_currency(transactions, "USD"))
-    assert len(result) == 3
-    assert result[0]["operationAmount"]["currency"]["code"] == "USD"
-    assert result[1]["operationAmount"]["currency"]["code"] == "USD"
-    assert result[2]["operationAmount"]["currency"]["code"] == "USD"
-
-
-def test_filter_by_currency_rub():
-    """Проверяем фильтрацию по RUB."""
-    result = list(filter_by_currency(transactions, "RUB"))
-    assert len(result) == 2
-    assert result[0]["operationAmount"]["currency"]["code"] == "RUB"
-    assert result[1]["operationAmount"]["currency"]["code"] == "RUB"
+@pytest.mark.parametrize("currency, expected_count", [
+    ("USD", 3),
+    ("RUB", 2),
+])
+def test_filter_by_currency(currency, expected_count):
+    """Проверяем фильтрацию по валюте."""
+    result = list(filter_by_currency(transactions, currency))
+    assert len(result) == expected_count
+    for transaction in result:
+        assert transaction["operationAmount"]["currency"]["code"] == currency
 
 
 def test_transaction_descriptions_with_data(sample_transactions):
@@ -92,14 +87,15 @@ def test_transaction_descriptions_empty_list():
     assert descriptions == []
 
 
-def test_card_number_generator_valid_range():
-    """Проверяем генерацию номеров карт в диапазоне от 1 до 3."""
-    result = list(card_number_generator(1, 3))
-    expected = [
-        "0000 0000 0000 0001",
-        "0000 0000 0000 0002",
-        "0000 0000 0000 0003"
-    ]
+@pytest.mark.parametrize("start, end, expected", [
+    (1, 3, ["0000 0000 0000 0001",
+            "0000 0000 0000 0002",
+            "0000 0000 0000 0003"]),
+    (12, 12, ["0000 0000 0000 0012"]),
+])
+def test_card_number_generator(start, end, expected):
+    """Проверяем генерацию номеров карт в заданном диапазоне."""
+    result = list(card_number_generator(start, end))
     assert result == expected
 
 
@@ -108,9 +104,3 @@ def test_card_number_generator_empty_range():
     result = list(card_number_generator(5, 4))
     expected = []
     assert result == expected
-
-
-def test_card_number_generator_format():
-    """Проверяем, что номера карт имеют правильный формат."""
-    result = list(card_number_generator(12, 12))
-    assert result == ["0000 0000 0000 0012"]
