@@ -1,0 +1,4 @@
+Function 'multiply' started with args: (4, 5), kwargs: {}
+Function 'multiply' finished successfully with result: 20
+Function 'add' started with args: (4, 5), kwargs: {}
+Function 'add' finished successfully with result: 20
