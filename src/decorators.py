@@ -1,4 +1,9 @@
 def log(filename=None):
+    """
+       Позволяет записывать информацию о вызовах функций, включая переданные аргументы и результаты.
+    Если указано имя файла, лог записывается в этот файл; иначе выводится в консоль.
+    """
+
     def decorator(func):
         def wrapper(*args, **kwargs):
             log_message = f"Function '{func.__name__}' started with args: {args}, kwargs: {kwargs}\n"
@@ -22,9 +27,9 @@ def log(filename=None):
     return decorator
 
 
-
 @log()
 def add(a, b):
     return a + b
+
 
 add(2, 3)
