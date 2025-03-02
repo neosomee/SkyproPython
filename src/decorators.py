@@ -1,6 +1,6 @@
 def log(filename=None):
     """
-       Позволяет записывать информацию о вызовах функций, включая переданные аргументы и результаты.
+    Позволяет записывать информацию о вызовах функций, включая переданные аргументы и результаты.
     Если указано имя файла, лог записывается в этот файл; иначе выводится в консоль.
     """
 
@@ -11,6 +11,11 @@ def log(filename=None):
             try:
                 result = func(*args, **kwargs)
                 log_message += f"Function '{func.__name__}' finished successfully with result: {result}\n"
+                if filename:
+                    with open(filename, 'a') as f:
+                        f.write(log_message)
+                else:
+                    print(log_message)
                 return result
 
             except Exception as e:
