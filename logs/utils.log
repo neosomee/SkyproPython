@@ -1,0 +1,12 @@
+2025-03-13 15:45:01,062 DEBUG: Debug message
+2025-03-13 15:45:01,062 INFO: Info message
+2025-03-13 15:45:01,062 WARNING: Warning message
+2025-03-13 15:45:01,062 ERROR: Error message
+2025-03-13 15:45:01,062 CRITICAL: Critical message
+2025-03-13 15:45:01,063 DEBUG: Successfully loaded JSON data from C:\Users\User\PycharmProjects\PythonHomework\data\operations.json
+2025-03-13 15:54:45,597 DEBUG: Debug message
+2025-03-13 15:54:45,597 INFO: Info message
+2025-03-13 15:54:45,597 WARNING: Warning message
+2025-03-13 15:54:45,597 ERROR: Error message
+2025-03-13 15:54:45,597 CRITICAL: Critical message
+2025-03-13 15:54:45,598 DEBUG: Successfully loaded JSON data from C:\Users\User\PycharmProjects\PythonHomework\data\operations.json
