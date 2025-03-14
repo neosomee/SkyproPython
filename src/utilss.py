@@ -9,10 +9,10 @@ def connect_to_json(path):
             return data
     except FileNotFoundError as e:
         print(f'File not found: {e}')
-        return None
+        return '[]'
     except JSONDecodeError as e:
         print(f'JSON decode error: {e}')
-        return None
+        return '[]'
 
 
 

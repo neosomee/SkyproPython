@@ -30,11 +30,11 @@ def connect_to_json(path):
     except FileNotFoundError as e:
         logger.error(f'File not found: {e}')
         print(f'File not found: {e}')
-        return None
+        return '[]'
     except JSONDecodeError as e:
         logger.error(f'JSON decode error: {e}')
         print(f'JSON decode error: {e}')
-        return None
+        return '[]'
 
 
 
