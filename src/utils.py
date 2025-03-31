@@ -4,7 +4,7 @@ import logging
 import os
 
 logger = logging.getLogger(__name__)
-log_dir = '../logs'
+log_dir = r'C:\Users\Dareshin.D\PycharmProjects\skypro\SkyproPython\logs'
 
 
 file_handler = logging.FileHandler(os.path.join(log_dir, 'utils.log'))
@@ -39,5 +39,5 @@ def connect_to_json(path):
 
 
 if __name__ == "__main__":
-    json_data = connect_to_json(r'C:\Users\User\PycharmProjects\PythonHomework\data\operations.json')
+    json_data = connect_to_json(r'C:\Users\Dareshin.D\PycharmProjects\skypro\SkyproPython\data\operations.json')
     print(json_data)
