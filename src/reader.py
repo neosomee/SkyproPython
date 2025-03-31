@@ -1,37 +1,21 @@
 import pandas as pd
+from SkyproPython.data.transactions_csv import TRANSACTIONS_CSV_PATH
+from SkyproPython.data.transactions_excel import TRANSACTIONS_EXCEL_PATH
 
-
-def read_csv_file(file_path):
+def read_csv_transactions():
+    """Чтение CSV-файла"""
     try:
-        df = pd.read_csv(file_path, sep=';')
-
-        print("Размерность датафрейма:", df.shape)
-        print("Первые строки датафрейма:\n", df.head())
-
-        return df
-
+        df = pd.read_csv(TRANSACTIONS_CSV_PATH)
+        return df.to_dict('records')
     except Exception as e:
-        print(f"Ошибка чтения файла: {e}")
-        return None
+        print(f"Ошибка чтения CSV: {str(e)}")
+        return []
 
-
-csv_file_path = 'C:\\Users\\Dareshin.D\\Downloads\\transactions.csv'
-df = read_csv_file(csv_file_path)
-
-
-def read_excel_file(file_path1):
+def read_excel_transactions():
+    """Чтение Excel-файла с обработкой ошибок"""
     try:
-        df1 = pd.read_excel(file_path1)
-
-        print("Размерность датафрейма:", df1.shape)
-        print("Первые строки датафрейма:\n", df1.head())
-
-        return df1
-
+        df = pd.read_excel(TRANSACTIONS_EXCEL_PATH)
+        return df.to_dict('records')
     except Exception as e:
-        print(f"Ошибка чтения файла: {e}")
-        return None
-
-
-excel_file_path = 'C:\\Users\\Dareshin.D\\Downloads\\transactions_excel.xlsx'
-df1 = read_excel_file(excel_file_path)
+        print(f"Ошибка чтения Excel: {str(e)}")
+        return []
