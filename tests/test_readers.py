@@ -1,7 +1,7 @@
 import pandas as pd
 import pytest
 from unittest.mock import patch
-from SkyproPython.src.reader import read_csv_transactions, read_excel_transactions
+from src.reader import read_csv_transactions, read_excel_transactions
 
 MOCK_CSV_DATA = pd.DataFrame({
     'id': [1, 2, 3],
