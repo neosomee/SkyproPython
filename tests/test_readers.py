@@ -2,7 +2,7 @@ from unittest.mock import patch
 
 import pandas as pd
 
-from src import files_reader
+from src import readers
 
 
 @patch("pandas.read_csv")
