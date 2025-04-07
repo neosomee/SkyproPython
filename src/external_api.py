@@ -3,28 +3,22 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-
-
-transaction = {
-    "id": 667307132,
-    "state": "EXECUTED",
-    "date": "2019-07-13T18:51:29.313309",
-    "operationAmount": {
-      "amount": "100.00",
-      "currency": {
-        "name": "доллары.",
-        "code": "USD"
-      }
-    },
-    "description": "Перевод с карты на счет",
-    "from": "Maestro 1308795367077170",
-    "to": "Счет 96527012349577388612"
-  }
-
-
 def external_api(transaction):
-    code = transaction.get('operationAmount').get('currency',).get('code')
-    amount = transaction.get('operationAmount').get('amount')
+    """
+    Конвертирует валюту транзакции в рубли.
+    """
+    operation_amount = transaction.get('operationAmount')
+    if operation_amount is None:
+        print("Ошибка: ключ 'operationAmount' отсутствует или равен None")
+        return None
+
+    currency = operation_amount.get('currency')
+    if currency is None:
+        print("Ошибка: ключ 'currency' отсутствует или равен None")
+        return None
+
+    code = currency.get('code')
+    amount = operation_amount.get('amount')
 
     if code == 'RUB':
         return float(amount)
@@ -50,4 +44,4 @@ def external_api(transaction):
         except Exception as e:
             print(f"An error occurred: {e.__class__.__name__} - {str(e)}")
 
-external_api(transaction)
+    return None
