@@ -5,7 +5,8 @@ def filter_by_state(data: list[dict], state: str = 'EXECUTED') -> list[dict]:
     """
     filtered_data = []
     for item in data:
-        if item.get('state') == state:
+        state_value = item.get('state')
+        if isinstance(state_value, str) and state_value.upper() == state.upper():
             filtered_data.append(item)
     return filtered_data
 
