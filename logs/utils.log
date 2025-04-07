@@ -1,0 +1,111 @@
+2025-03-13 15:45:01,062 DEBUG: Debug message
+2025-03-13 15:45:01,062 INFO: Info message
+2025-03-13 15:45:01,062 WARNING: Warning message
+2025-03-13 15:45:01,062 ERROR: Error message
+2025-03-13 15:45:01,062 CRITICAL: Critical message
+2025-03-13 15:45:01,063 DEBUG: Successfully loaded JSON data from C:\Users\User\PycharmProjects\PythonHomework\data\operations.json
+2025-03-13 15:54:45,597 DEBUG: Debug message
+2025-03-13 15:54:45,597 INFO: Info message
+2025-03-13 15:54:45,597 WARNING: Warning message
+2025-03-13 15:54:45,597 ERROR: Error message
+2025-03-13 15:54:45,597 CRITICAL: Critical message
+2025-03-13 15:54:45,598 DEBUG: Successfully loaded JSON data from C:\Users\User\PycharmProjects\PythonHomework\data\operations.json
+2025-03-31 13:54:45,139 DEBUG: Debug message
+2025-03-31 13:54:45,139 INFO: Info message
+2025-03-31 13:54:45,139 WARNING: Warning message
+2025-03-31 13:54:45,139 ERROR: Error message
+2025-03-31 13:54:45,139 CRITICAL: Critical message
+2025-03-31 13:54:45,139 ERROR: File not found: [Errno 2] No such file or directory: 'C:\\Users\\User\\PycharmProjects\\PythonHomework\\data\\operations.json'
+2025-03-31 14:04:25,175 DEBUG: Debug message
+2025-03-31 14:04:25,175 INFO: Info message
+2025-03-31 14:04:25,176 WARNING: Warning message
+2025-03-31 14:04:25,176 ERROR: Error message
+2025-03-31 14:04:25,176 CRITICAL: Critical message
+2025-03-31 14:04:25,176 ERROR: File not found: [Errno 2] No such file or directory: 'C:\\Users\\Dareshin.D\\PycharmProjects\\skypro\\SkyproPython\\operations.json'
+2025-03-31 14:06:26,749 DEBUG: Debug message
+2025-03-31 14:06:26,749 INFO: Info message
+2025-03-31 14:06:26,749 WARNING: Warning message
+2025-03-31 14:06:26,749 ERROR: Error message
+2025-03-31 14:06:26,749 CRITICAL: Critical message
+2025-03-31 14:06:26,750 DEBUG: Successfully loaded JSON data from C:\Users\Dareshin.D\PycharmProjects\skypro\SkyproPython\data\operations.json
+2025-03-31 14:08:59,972 DEBUG: Debug message
+2025-03-31 14:08:59,973 INFO: Info message
+2025-03-31 14:08:59,973 WARNING: Warning message
+2025-03-31 14:08:59,973 ERROR: Error message
+2025-03-31 14:08:59,973 CRITICAL: Critical message
+2025-03-31 14:09:03,873 DEBUG: Successfully loaded JSON data from data/operations.json
+2025-03-31 14:10:52,443 DEBUG: Debug message
+2025-03-31 14:10:52,443 INFO: Info message
+2025-03-31 14:10:52,443 WARNING: Warning message
+2025-03-31 14:10:52,443 ERROR: Error message
+2025-03-31 14:10:52,443 CRITICAL: Critical message
+2025-03-31 14:10:59,266 DEBUG: Successfully loaded JSON data from data/operations.json
+2025-03-31 14:11:22,021 DEBUG: Debug message
+2025-03-31 14:11:22,021 INFO: Info message
+2025-03-31 14:11:22,021 WARNING: Warning message
+2025-03-31 14:11:22,021 ERROR: Error message
+2025-03-31 14:11:22,021 CRITICAL: Critical message
+2025-03-31 14:13:15,117 DEBUG: Debug message
+2025-03-31 14:13:15,117 INFO: Info message
+2025-03-31 14:13:15,117 WARNING: Warning message
+2025-03-31 14:13:15,117 ERROR: Error message
+2025-03-31 14:13:15,117 CRITICAL: Critical message
+2025-03-31 14:13:38,524 DEBUG: Debug message
+2025-03-31 14:13:38,524 INFO: Info message
+2025-03-31 14:13:38,524 WARNING: Warning message
+2025-03-31 14:13:38,524 ERROR: Error message
+2025-03-31 14:13:38,524 CRITICAL: Critical message
+2025-03-31 14:13:39,801 DEBUG: Successfully loaded JSON data from data/operations.json
+2025-03-31 14:13:58,949 DEBUG: Debug message
+2025-03-31 14:13:58,950 INFO: Info message
+2025-03-31 14:13:58,950 WARNING: Warning message
+2025-03-31 14:13:58,950 ERROR: Error message
+2025-03-31 14:13:58,950 CRITICAL: Critical message
+2025-03-31 14:15:16,985 DEBUG: Debug message
+2025-03-31 14:15:16,985 INFO: Info message
+2025-03-31 14:15:16,985 WARNING: Warning message
+2025-03-31 14:15:16,986 ERROR: Error message
+2025-03-31 14:15:16,986 CRITICAL: Critical message
+2025-03-31 14:15:18,930 DEBUG: Successfully loaded JSON data from data/operations.json
+2025-03-31 14:16:15,343 DEBUG: Debug message
+2025-03-31 14:16:15,343 INFO: Info message
+2025-03-31 14:16:15,343 WARNING: Warning message
+2025-03-31 14:16:15,343 ERROR: Error message
+2025-03-31 14:16:15,343 CRITICAL: Critical message
+2025-03-31 14:22:48,603 DEBUG: Debug message
+2025-03-31 14:22:48,604 INFO: Info message
+2025-03-31 14:22:48,604 WARNING: Warning message
+2025-03-31 14:22:48,604 ERROR: Error message
+2025-03-31 14:22:48,604 CRITICAL: Critical message
+2025-03-31 14:24:32,734 DEBUG: Debug message
+2025-03-31 14:24:32,735 INFO: Info message
+2025-03-31 14:24:32,735 WARNING: Warning message
+2025-03-31 14:24:32,735 ERROR: Error message
+2025-03-31 14:24:32,735 CRITICAL: Critical message
+2025-03-31 14:24:35,866 DEBUG: Successfully loaded JSON data from data/operations.json
+2025-03-31 14:24:54,003 DEBUG: Debug message
+2025-03-31 14:24:54,003 INFO: Info message
+2025-03-31 14:24:54,003 WARNING: Warning message
+2025-03-31 14:24:54,003 ERROR: Error message
+2025-03-31 14:24:54,003 CRITICAL: Critical message
+2025-03-31 14:27:38,401 DEBUG: Debug message
+2025-03-31 14:27:38,401 INFO: Info message
+2025-03-31 14:27:38,401 WARNING: Warning message
+2025-03-31 14:27:38,401 ERROR: Error message
+2025-03-31 14:27:38,401 CRITICAL: Critical message
+2025-03-31 14:28:45,152 DEBUG: Debug message
+2025-03-31 14:28:45,152 INFO: Info message
+2025-03-31 14:28:45,152 WARNING: Warning message
+2025-03-31 14:28:45,152 ERROR: Error message
+2025-03-31 14:28:45,152 CRITICAL: Critical message
+2025-03-31 14:30:26,118 DEBUG: Debug message
+2025-03-31 14:30:26,118 INFO: Info message
+2025-03-31 14:30:26,118 WARNING: Warning message
+2025-03-31 14:30:26,118 ERROR: Error message
+2025-03-31 14:30:26,118 CRITICAL: Critical message
+2025-03-31 14:30:59,820 DEBUG: Debug message
+2025-03-31 14:30:59,820 INFO: Info message
+2025-03-31 14:30:59,820 WARNING: Warning message
+2025-03-31 14:30:59,820 ERROR: Error message
+2025-03-31 14:30:59,820 CRITICAL: Critical message
+2025-03-31 14:31:01,817 DEBUG: Successfully loaded JSON data from data/operations.json
