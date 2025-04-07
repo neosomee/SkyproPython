@@ -1,4 +1,7 @@
-def mask_account_card(account_info):
+def mask_account_card(account_info: str) -> str:
+    """
+    Маскирует номер карты или счета, показывая только часть информации.
+    """
     last_index = 0
 
     for i in range(len(account_info)):
@@ -16,7 +19,10 @@ def mask_account_card(account_info):
     return masked_number
 
 
-def get_date(date_str):
+def get_date(date_str: str) -> str:
+    """
+    Преобразует строку даты в формат дд.мм.гггг.
+    """
     year = date_str[0:4]
     month = date_str[5:7]
     day = date_str[8:10]
